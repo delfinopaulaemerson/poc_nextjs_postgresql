@@ -1,0 +1,2 @@
+{"timestamp":"00:00:08.610","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:01:52.876","source":"Server","level":"LOG","message":"prisma:query \"INSERT INTO \\\"public\\\".\\\"users\\\" (\\\"nome\\\",\\\"idade\\\",\\\"email\\\",\\\"senha\\\") VALUES ($1,$2,$3,$4) RETURNING \\\"public\\\".\\\"users\\\".\\\"id\\\", \\\"public\\\".\\\"users\\\".\\\"nome\\\", \\\"public\\\".\\\"users\\\".\\\"idade\\\", \\\"public\\\".\\\"users\\\".\\\"email\\\", \\\"public\\\".\\\"users\\\".\\\"senha\\\"\""}
