@@ -1,3 +1,4 @@
 {
+  "/api/consume/route": "app/api/consume/route.js",
   "/api/send/route": "app/api/send/route.js"
 }

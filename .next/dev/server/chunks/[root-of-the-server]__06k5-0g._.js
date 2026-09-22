@@ -117,7 +117,6 @@ async function POST(request) {
         const body = await request.json();
         const message = body;
         const producer = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$kafka$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getKafkaProducer"])();
-        console.log(">>>>>>>> producer", producer);
         await producer.send({
             topic: 'tpc-nextjs-poc',
             messages: [
@@ -147,7 +146,9 @@ async function POST(request) {
 
 __turbopack_context__.s([
     "getKafkaProducer",
-    ()=>getKafkaProducer
+    ()=>getKafkaProducer,
+    "kafka",
+    ()=>kafka
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$kafkajs$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/kafkajs/index.js [app-route] (ecmascript)");
 ;

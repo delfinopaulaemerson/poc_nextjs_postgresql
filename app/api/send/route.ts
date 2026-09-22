@@ -11,7 +11,6 @@ export async function POST(request:Request) {
         const body = await request.json();
         const message = body;
         const producer = await getKafkaProducer();
-        console.log(">>>>>>>> producer", producer);
         await producer.send({
             topic:'tpc-nextjs-poc',
             messages:[

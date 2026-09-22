@@ -5,7 +5,7 @@ const globalForKafka = global as unknown as {
     kafkaProducer : Producer | undefined; 
 };
 
-const kafka = new Kafka({
+export const kafka = new Kafka({
     clientId: 'poc-nextjs-postgesql',
     brokers: [process.env.KAFKA_BROKER || 'localhost:9092']
 });
